@@ -1,0 +1,16 @@
+{
+  "name": "graphql-yoga-tutorial",
+  "description": "GraphQL hello world tutorial",
+  "scripts": {
+    "start": "nodemon src/relational-data.ts"
+  },
+  "dependencies": {
+    "graphql-yoga": "1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "9.4.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^4.1.0",
+    "typescript": "2.6.2"
+  }
+}
