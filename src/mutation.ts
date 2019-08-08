@@ -56,7 +56,7 @@ const resolvers = {
         email : args.email
       }
 
-      users.push(user);
+      users.push(user); // api call or insert in to db directly
       return user;
     }
   }
