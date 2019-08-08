@@ -8,10 +8,10 @@ const typeDefs = `
 
 const resolvers = {
   Query: {
-    sayHello: () => "Hello world",
+    sayHello: () => "Hello Indira",
   },
 }
 
 const server = new GraphQLServer({ typeDefs, resolvers })
 
-server.start(() => console.log('Server is running on http://localhost:4000'))
+server.start({port:8080},() => console.log('Server is running on http://localhost:4000'))

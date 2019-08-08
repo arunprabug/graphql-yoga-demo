@@ -12,8 +12,8 @@ import { GraphQLServer } from "graphql-yoga"
 const typeDefs = `
   type Query {
     id: ID!
-    name: String
-    term : Int
+    name: String!
+    term : [Int]
     isExtendable : Boolean
     rateOfInterest: Float
     schemeDetails: Scheme
@@ -37,9 +37,9 @@ const typeDefs = `
 
 const resolvers = {
     Query: {
-        id: () => "a12dedf",
+        id: () => "12333dd",
         name: () => "fixed deposit",
-        term: () => 5,
+        term: () => [5,6],
         isExtendable: () => true,
         rateOfInterest: () => "3.5",
         schemeDetails: () => {

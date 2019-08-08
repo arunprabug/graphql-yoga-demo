@@ -3,7 +3,7 @@ import { GraphQLServer } from "graphql-yoga"
 
 const typeDefs = `
   type Query {
-    greeting(name:String) : String!
+    greeting(firstName:String, lastName:String!) : String!
   }
 `
 
@@ -11,7 +11,7 @@ const resolvers = {
     Query: {
         greeting: (parent, args, ctx, info) => {
             console.log(args);
-            return "Hello !"
+            return `Hello ${args.firstName} ${args.lastName}`
         }
     },
 }

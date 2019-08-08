@@ -2,7 +2,7 @@
   "name": "graphql-yoga-tutorial",
   "description": "GraphQL hello world tutorial",
   "scripts": {
-    "start": "nodemon src/relational-data.ts"
+    "start": "nodemon src/relational-array.ts"
   },
   "dependencies": {
     "graphql-yoga": "1.2.0"
