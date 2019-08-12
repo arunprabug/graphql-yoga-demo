@@ -5,11 +5,12 @@ import Post from './Post'
 import Comment from './Comment'
 
 const resolvers = {
-    Query,
-    Mutation,
-    User,
-    Post,
-    Comment
-  };
+  Query,
+  Mutation,
+  User,
+  Post,
+  Comment
+};
 
-  export default resolvers;
+
+export default resolvers;

@@ -1,5 +1,11 @@
+const student = {name:"Arun"}
+
+//const {name} = student;
+//const name = student.
+//console.log(name);
+
 const Query = {
-    users(parent, args, { db }, info) {
+    users(parent, args, {db}, info) {
         if (!args.query) {
             return db.users
         }
